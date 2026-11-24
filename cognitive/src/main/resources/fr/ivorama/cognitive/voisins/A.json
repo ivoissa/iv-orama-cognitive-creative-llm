@@ -1,0 +1,273 @@
+{
+  "liste": "A",
+  "type": "relations syntaxiques (entre mots dans une phrase)",
+  "ordre": "fréquence d’usage estimée, décroissante",
+  "proximite": "valeur de 0 à 1 par relation : proximité de sens estimée entre deux mots liés (1 = très proche). Valeurs par défaut à ajuster.",
+  "categories": [
+    {
+      "rang": 1,
+      "nom": "Groupe nominal",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Déterminant",
+          "proximite": 0.5,
+          "description": "Introduit le nom et précise son genre, son nombre et sa référence.",
+          "exemple": "le chat, ce livre, mon frère"
+        },
+        {
+          "rang": 2,
+          "nom": "Complément du nom",
+          "proximite": 0.7,
+          "description": "Précise un nom grâce à une préposition.",
+          "exemple": "la maison de Paul"
+        },
+        {
+          "rang": 3,
+          "nom": "Épithète",
+          "proximite": 0.9,
+          "description": "Adjectif qui qualifie directement un nom.",
+          "exemple": "une belle maison"
+        },
+        {
+          "rang": 4,
+          "nom": "Apposition",
+          "proximite": 0.8,
+          "description": "Groupe nominal placé à côté d’un nom pour l’identifier ou le préciser.",
+          "exemple": "Paris, capitale de la France"
+        },
+        {
+          "rang": 5,
+          "nom": "Adjectif détaché",
+          "proximite": 0.7,
+          "description": "Adjectif séparé du nom par une virgule, qui le qualifie.",
+          "exemple": "Fatigué, il dort."
+        },
+        {
+          "rang": 6,
+          "nom": "Apostrophe",
+          "proximite": 0.2,
+          "description": "Désigne la personne ou la chose à qui l’on s’adresse.",
+          "exemple": "Paul, viens !"
+        }
+      ]
+    },
+    {
+      "rang": 2,
+      "nom": "Fonctions autour du verbe",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Sujet",
+          "proximite": 0.8,
+          "description": "Mot ou groupe qui fait l’action ou dont on parle ; le verbe s’accorde avec lui.",
+          "exemple": "Le chat dort."
+        },
+        {
+          "rang": 2,
+          "nom": "COD (complément d’objet direct)",
+          "proximite": 0.9,
+          "description": "Complète le verbe sans préposition ; répond à « quoi ? » ou « qui ? ».",
+          "exemple": "Je mange une pomme."
+        },
+        {
+          "rang": 3,
+          "nom": "Complément circonstanciel",
+          "proximite": 0.5,
+          "description": "Indique les circonstances de l’action : lieu, temps, manière, cause, but, moyen, condition, concession.",
+          "exemple": "Il part demain."
+        },
+        {
+          "rang": 4,
+          "nom": "Attribut du sujet",
+          "proximite": 0.9,
+          "description": "Qualifie le sujet par l’intermédiaire d’un verbe d’état.",
+          "exemple": "Il est content."
+        },
+        {
+          "rang": 5,
+          "nom": "COI (complément d’objet indirect)",
+          "proximite": 0.8,
+          "description": "Complète le verbe avec une préposition (à, de).",
+          "exemple": "Je pense à toi."
+        },
+        {
+          "rang": 6,
+          "nom": "Complément d’agent",
+          "proximite": 0.7,
+          "description": "Indique qui fait l’action dans une phrase passive.",
+          "exemple": "aimé de tous"
+        },
+        {
+          "rang": 7,
+          "nom": "Sujet réel",
+          "proximite": 0.6,
+          "description": "Vrai sujet du verbe quand le sujet grammatical est « il » impersonnel.",
+          "exemple": "Il faut du temps."
+        },
+        {
+          "rang": 8,
+          "nom": "COS (complément d’objet second)",
+          "proximite": 0.7,
+          "description": "Second complément du verbe, introduit par une préposition, après un COD.",
+          "exemple": "Je donne un livre à Paul."
+        },
+        {
+          "rang": 9,
+          "nom": "Attribut du COD",
+          "proximite": 0.8,
+          "description": "Qualifie le COD par l’intermédiaire du verbe.",
+          "exemple": "Je le trouve drôle."
+        }
+      ]
+    },
+    {
+      "rang": 3,
+      "nom": "Accords et mots-outils",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Accord",
+          "proximite": 0.4,
+          "description": "Mise en accord de genre, nombre et personne entre sujet-verbe, nom-adjectif, participe passé.",
+          "exemple": "Les filles sont parties."
+        },
+        {
+          "rang": 2,
+          "nom": "Préposition",
+          "proximite": 0.3,
+          "description": "Mot invariable qui introduit un complément et marque un rapport.",
+          "exemple": "dans la maison, parler à Paul"
+        },
+        {
+          "rang": 3,
+          "nom": "Adverbe",
+          "proximite": 0.6,
+          "description": "Mot invariable qui modifie un verbe, un adjectif ou un autre adverbe.",
+          "exemple": "très bien, il court vite"
+        },
+        {
+          "rang": 4,
+          "nom": "Auxiliaire et participe",
+          "proximite": 0.3,
+          "description": "L’auxiliaire (avoir, être) s’associe au participe pour former les temps composés.",
+          "exemple": "il a mangé"
+        },
+        {
+          "rang": 5,
+          "nom": "Pronom (anaphore)",
+          "proximite": 0.6,
+          "description": "Remplace un mot ou groupe déjà cité pour éviter la répétition.",
+          "exemple": "Paul dort, il rêve."
+        },
+        {
+          "rang": 6,
+          "nom": "Gouvernement (régime)",
+          "proximite": 0.7,
+          "description": "Le verbe impose une préposition précise à son complément.",
+          "exemple": "dépendre de, penser à"
+        },
+        {
+          "rang": 7,
+          "nom": "Antécédent du pronom relatif",
+          "proximite": 0.7,
+          "description": "Mot que reprend le pronom relatif dans la subordonnée.",
+          "exemple": "l’homme que je vois"
+        }
+      ]
+    },
+    {
+      "rang": 4,
+      "nom": "Relations entre propositions",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Coordination",
+          "proximite": 0.5,
+          "description": "Relie deux éléments de même fonction par une conjonction de coordination.",
+          "exemple": "Il chante et elle danse."
+        },
+        {
+          "rang": 2,
+          "nom": "Subordonnée relative",
+          "proximite": 0.6,
+          "description": "Complète un nom ou un pronom (antécédent) à l’aide d’un pronom relatif.",
+          "exemple": "le livre que je lis"
+        },
+        {
+          "rang": 3,
+          "nom": "Subordonnée complétive",
+          "proximite": 0.6,
+          "description": "Complète un verbe ou un nom, introduite par que, si ou un interrogatif.",
+          "exemple": "Je pense que tu viens."
+        },
+        {
+          "rang": 4,
+          "nom": "Subordonnée circonstancielle",
+          "proximite": 0.4,
+          "description": "Exprime une circonstance (temps, cause, but, condition…) de la principale.",
+          "exemple": "Il sort parce qu’il pleut moins."
+        },
+        {
+          "rang": 5,
+          "nom": "Juxtaposition",
+          "proximite": 0.3,
+          "description": "Place deux propositions côte à côte sans mot de liaison, avec ponctuation.",
+          "exemple": "Il vient, il voit, il part."
+        },
+        {
+          "rang": 6,
+          "nom": "Principale et subordonnée",
+          "proximite": 0.4,
+          "description": "La principale peut se suffire à elle-même ; la subordonnée en dépend.",
+          "exemple": "Je sais [que tu viens]."
+        }
+      ]
+    },
+    {
+      "rang": 5,
+      "nom": "Compléments rares",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Complément de l’adjectif",
+          "proximite": 0.8,
+          "description": "Précise le sens d’un adjectif.",
+          "exemple": "fier de lui"
+        },
+        {
+          "rang": 2,
+          "nom": "Complément du pronom",
+          "proximite": 0.7,
+          "description": "Précise un pronom.",
+          "exemple": "celui de gauche"
+        },
+        {
+          "rang": 3,
+          "nom": "Complément de l’adverbe",
+          "proximite": 0.7,
+          "description": "Précise le sens d’un adverbe.",
+          "exemple": "loin de là"
+        }
+      ]
+    },
+    {
+      "rang": 6,
+      "nom": "Relations techniques des extracteurs",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Copule",
+          "proximite": 1.0,
+          "description": "Coefficient technique neutre ; le score de l’extracteur porte déjà la pondération. Ce coefficient n’est pas une probabilité de vérité."
+        },
+        {
+          "rang": 2,
+          "nom": "Voisin indirect",
+          "proximite": 1.0,
+          "description": "Coefficient technique neutre ; le score de l’extracteur porte déjà la pondération. Ce coefficient n’est pas une probabilité de vérité."
+        }
+      ]
+    }
+  ]
+}

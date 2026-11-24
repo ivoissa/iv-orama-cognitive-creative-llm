@@ -1,0 +1,27 @@
+case	provider	reference	draft	expected_status	expected_action
+E01	fixture-qwen	La porte A est ouverte.	La porte A est ouverte.	ENTAILED	NONE
+E02	fixture-openai	Le document B est valide.	Le document B est valide.	ENTAILED	NONE
+E03	fixture-claude	Le dossier C est complet.	Le dossier C est complet.	ENTAILED	NONE
+E04	fixture-other	La porte A est ouverte. La porte A est ouverte.	La porte A est ouverte.	ENTAILED	NONE
+E05	fixture-gemini	La porte A est ouverte. Le document B est valide.	Le document B est valide.	ENTAILED	NONE
+C01	fixture-qwen	La porte A est ouverte.	La porte A n'est pas ouverte.	CONTRADICTED	CHALLENGE
+C02	fixture-openai	Le document B est valide.	Le document B n'est pas valide.	CONTRADICTED	CHALLENGE
+C03	fixture-claude	La porte A n'est pas ouverte.	La porte A est ouverte.	CONTRADICTED	CHALLENGE
+C04	fixture-other	Le dossier C est complet.	Le dossier C n'est pas complet.	CONTRADICTED	CHALLENGE
+C05	fixture-gemini	La porte A est ouverte. Le document B est valide.	La porte A n'est pas ouverte.	CONTRADICTED	CHALLENGE
+U01	fixture-qwen	La porte A est ouverte.	La porte A est fermée.	CONSISTENT_UNSUPPORTED	NEEDS_SOURCE
+U02	fixture-openai	La porte A est ouverte.	Le document B est valide.	CONSISTENT_UNSUPPORTED	NEEDS_SOURCE
+U03	fixture-claude	Le dossier C est complet.	La porte A est ouverte.	CONSISTENT_UNSUPPORTED	NEEDS_SOURCE
+U04	fixture-other	Le document B est valide.	Le document B est archivé.	CONSISTENT_UNSUPPORTED	NEEDS_SOURCE
+U05	fixture-gemini	La porte A est ouverte.	La porte A est active.	CONSISTENT_UNSUPPORTED	NEEDS_SOURCE
+I01	fixture-qwen	La porte A est ouverte.	La porte C est ouverte. La porte C n'est pas ouverte.	CONTRADICTED	INTERNAL_CONFLICT
+I02	fixture-openai	Le document B est valide.	La porte C est ouverte. La porte C n'est pas ouverte.	CONTRADICTED	INTERNAL_CONFLICT
+I03	fixture-claude	La porte A est ouverte.	Le dossier C est complet. Le dossier C n'est pas complet.	CONTRADICTED	INTERNAL_CONFLICT
+R01	fixture-qwen	La porte A est ouverte. La porte A n'est pas ouverte.	La porte A est ouverte.	INCONSISTENT_REFERENCE	UNRESOLVED
+R02	fixture-claude	Le document B est valide. Le document B n'est pas valide.	Le document B est valide.	INCONSISTENT_REFERENCE	UNRESOLVED
+L01	fixture-qwen	La porte A est ouverte.	« La porte A n'est pas ouverte ».	UNRESOLVED_LANGUAGE	UNRESOLVED
+L02	fixture-openai	La porte A est ouverte.	Elle est ouverte.	UNRESOLVED_LANGUAGE	UNRESOLVED
+L03	fixture-claude	La porte A est ouverte.	La porte A est probablement ouverte.	UNRESOLVED_LANGUAGE	UNRESOLVED
+L04	fixture-other	La porte A est ouverte.	La porte A est ouverte. Cela semble évident.	UNRESOLVED_LANGUAGE	UNRESOLVED
+L05	fixture-gemini	La porte A est ouverte.	Paul affirme que la porte A est ouverte.	UNRESOLVED_LANGUAGE	UNRESOLVED
+L06	fixture-other	La porte A est ouverte.	La porte A est ouverte selon Paul.	UNRESOLVED_LANGUAGE	UNRESOLVED

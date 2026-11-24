@@ -1,0 +1,61 @@
+{
+  "sourceText": "Problème symbolique déclaré ; aucune traduction automatique du français.",
+  "entities": [
+    {
+      "kind": "item",
+      "name": "a"
+    },
+    {
+      "kind": "item",
+      "name": "b"
+    }
+  ],
+  "predicates": [
+    {
+      "name": "p",
+      "kinds": [
+        "item"
+      ]
+    },
+    {
+      "name": "q",
+      "kinds": [
+        "item"
+      ]
+    }
+  ],
+  "premises": [
+    {
+      "id": "positive",
+      "origin": "DECLARATION",
+      "source": "example",
+      "excerpt": "{\"atom\": \"p\", \"args\": [\"a\"]}",
+      "formula": {
+        "atom": "p",
+        "args": [
+          "a"
+        ]
+      }
+    },
+    {
+      "id": "negative",
+      "origin": "DECLARATION",
+      "source": "example",
+      "excerpt": "{\"not\": {\"atom\": \"p\", \"args\": [\"a\"]}}",
+      "formula": {
+        "not": {
+          "atom": "p",
+          "args": [
+            "a"
+          ]
+        }
+      }
+    }
+  ],
+  "goal": {
+    "atom": "q",
+    "args": [
+      "a"
+    ]
+  }
+}

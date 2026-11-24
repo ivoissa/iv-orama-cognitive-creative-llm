@@ -1,0 +1,10 @@
+case	provider	reference	draft	expected
+entailed	fixture-qwen	La porte A est ouverte.	La porte A est ouverte.	ENTAILED
+entailed-other	fixture-any	La porte A est ouverte.	La porte A est ouverte.	ENTAILED
+contradiction	fixture-gpt	La porte A est ouverte.	La porte A n'est pas ouverte.	CONTRADICTED
+unknown	fixture-claude	La porte A est ouverte.	La porte A est fermée.	CONSISTENT_UNSUPPORTED
+mixed-conflict	fixture-local	La porte A est ouverte.	La porte A est ouverte. La porte A n'est pas ouverte.	CONTRADICTED
+reference-conflict	fixture-other	La porte A est ouverte. La porte A n'est pas ouverte.	La porte A est ouverte.	INCONSISTENT_REFERENCE
+unparsed	fixture-unknown	La porte A est ouverte.	C'est probablement une idée intéressante.	UNRESOLVED_LANGUAGE
+partial	fixture-local	La porte A est ouverte.	La porte A est ouverte. Cela semble évident.	UNRESOLVED_LANGUAGE
+quoted	fixture-remote	La porte A est ouverte.	« La porte A n'est pas ouverte ».	UNRESOLVED_LANGUAGE

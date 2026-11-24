@@ -1,0 +1,23 @@
+# Closed grammatical scope markers. No synonym pairs or corpus-specific content words.
+# Negative forms additionally come from Dicollecte negadv/proneg/detneg tags.
+seulement	focus
+uniquement	focus
+presque	degree
+même	focus
+aussi	focus
+juste	focus
+déjà	aspect
+encore	aspect
+toujours	aspect
+pourtant	discourse
+cependant	discourse
+néanmoins	discourse
+donc	discourse
+alors	discourse
+enfin	discourse
+très	degree
+trop	degree
+assez	degree
+peu	degree
+sans	negative-preposition
+ni	negative-coordination

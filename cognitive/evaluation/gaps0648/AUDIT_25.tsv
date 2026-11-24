@@ -1,0 +1,26 @@
+id	layer	scope	probe	limitation	next_action
+DED-07	LANGUE	COMPONENT	XOR	Exclusion et cardinalité calculables formellement ; phrase XOR non traduite.	Ajouter une sémantique déclarée de exactement un avant routage français.
+DED-12	LANGUE	COMPONENT	CLASSICAL_TAUTOLOGY	Validité sur modèles classiques vérifiable ; disjonction et métalangage non exposés dans ce français.	Ne pas confondre validité classique et preuve dans le calcul syntaxique existant.
+DED-16	MIXTE	COMPONENT	PROOF_CANDIDATES	Vérification de preuves fournies disponible ; comparaison discursive de deux experts absente.	Exiger les preuves et leurs hypothèses avant de départager les candidats.
+DED-18	LANGUE	COMPONENT	DOUBLE_NEGATION	Double négation calculable ; traduction de sa portée interrogative non validée.	Tester la portée linguistique sans ajouter de réponse à une question particulière.
+DED-20	BANC_INTERFACE	COMPONENT	BUDGET_CHAIN	Limite explicite calculable ; 30 affectations ne sont pas 30 étapes de déduction.	Définir le type de budget et un statut RESOURCE_LIMIT séparé du manque de capteur.
+INC-04	EMPIRIQUE	COMPONENT	SOURCE_CONFLICT	Désaccord et provenances conservés ; aucune source ne devient vraie par priorité arbitraire.	Définir des attestations vérifiables avant tout arbitrage de vérité empirique.
+INC-06	BANC_INTERFACE	API	OBSERVATION_EXPIRY	Expiration et invalidation existantes sur mise à jour explicite de l'horloge.	Exposer le temps dans les scénarios ; ne pas prétendre à un ordonnanceur automatique.
+INC-07	BANC_INTERFACE	API	OBSERVATION_REVOCATION	Révocation et réouverture déjà disponibles dans le cycle.	Relier le scénario au registre existant au lieu de réimplémenter la révocation.
+INC-08	EMPIRIQUE	COMPONENT	NO_EMPIRICAL_CERTIFICATION	Intégrité des octets ne vaut ni authentification cryptographique ni vérité physique.	Conserver cette frontière ; ne pas promettre une vérité issue d'un hash.
+INC-17	LOGIQUE	LIMIT	EMPTY_DOMAIN	Le compilateur structuré rejette le domaine vide ; vacuité non implémentée dans cette interface.	Distinguer un type déclaré vide d'un type inconnu avant d'étendre les quantificateurs.
+INC-19	BANC_INTERFACE	API	BUDGET_BRANCH	Le modèle fini possède déjà un budget ; le vieux scénario ne le paramètre pas.	Exposer ce budget et réviser explicitement la correspondance des statuts de référence.
+INC-20	MIXTE	COMPONENT	EXCLUSIVE_PARTITIONS	Partitions disjointes validées en API ; pas de traduction des cellules depuis ce français.	Réutiliser QuestionPartition avec définition explicite et contrôle d'exhaustivité.
+DIA-05	MIXTE	COMPONENT	LEXICON_GUARD	Empreinte lexicale et refus de clarification après mutation existent ; refus par exception.	Ajouter un diagnostic typé côté dialogue, sans supprimer la protection existante.
+DIA-10	BANC_INTERFACE	API	ATOMIC_REPLACE	Remplacement atomique et invalidation des certificats déjà disponibles.	Exposer replace comme opération unique du banc ; ne pas simuler par retrait puis ajout.
+DIA-11	BANC_INTERFACE	API	MULTI_QUESTION	Plusieurs actes et explication sur la même session sont possibles.	Évaluer une séquence de questions, sans considérer la résolution des pronoms comme acquise.
+DIA-19	MIXTE	UNVERIFIED	NONE	Renommage en cours de dialogue non exercé ; invariance entre problèmes séparés insuffisante.	Définir identité des référents et migration des questions avant d'annoncer ce support.
+FRA-07	LANGUE	COMPONENT	DOUBLE_NEGATION	Calcul de double négation disponible ; forme française négative imbriquée refusée.	Partager une future analyse de portée avec DED-18.
+FRA-09	LANGUE	LIMIT	FRENCH_FRAGMENT	Comparaison métalinguistique aucun / pas tous hors fragment testé.	Conserver les lectures distinctes ; ne pas choisir une portée en silence.
+FRA-10	LANGUE	LIMIT	FRENCH_FRAGMENT	La prémisse avec sauf ne reçoit pas de traduction complète.	Définir les exceptions, leur domaine et leur portée avant inférence.
+FRA-11	LANGUE	LIMIT	FRENCH_FRAGMENT	La relative et ses référents ne sont pas résolus par cette entrée.	Ajouter des liaisons de référents vérifiables et tracer leur portée.
+FRA-13	LANGUE	COMPONENT	RELATION_ROLES	Rôles binaires indépendants en structuré ; question inversée bloquée par le typage français.	Faire évoluer les rôles et types de relations sans inventer de symétrie.
+TRA-02	MIXTE	COMPONENT	NEW_DOMAIN	Nouveaux types et relations déclarables ; données et traduction du nouveau domaine manquent.	Séparer le schéma déclaré, les faits sourcés et la question encore inconnue.
+TRA-11	EMPIRIQUE	UNVERIFIED	NONE	Aucune observation future ni modèle de température vérifié dans cet audit.	Demander une source et un modèle prédictif ; Wikipédia ne fournit pas une mesure future.
+TRA-14	EMPIRIQUE	COMPONENT	NO_EMPIRICAL_CERTIFICATION	Calibrage déclaré conservé mais pas vérifié indépendamment.	Brancher un protocole de calibration externe si ce besoin métier existe.
+TRA-20	LOGIQUE	LIMIT	SECOND_ORDER_REJECTION	Le langage structuré ne traite pas le second ordre ni une infinité de futurs.	Garder ce cas hors périmètre fini ; ne pas le transformer en réponse affirmative ou négative.

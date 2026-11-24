@@ -1,0 +1,50 @@
+# IV-ORAMA French NLP — configuration candidate 1.5.0
+# Tous les paramètres sont explicites et indépendants, sauf priorités documentées.
+transformations:
+  emphase_mode: false
+  yoda_mode_enabled: false
+  move_circumstantial_complements_enabled: false
+  add_commas_around_complements_enabled: false
+  replace_adjectives_with_synonyms_enabled: true
+  replace_first_and_third_nouns_enabled: true
+  stoic_mode_enabled: false
+  random_seed: 20261107
+  synonym_register:
+    # Priorité historique : courant > soutenu > familier.
+    familiar_enabled: false
+    common_enabled: true
+    formal_enabled: false
+
+synonyms:
+  disco:
+    semantic_freedom: 0
+    enabled: true
+    directory: "data/disco/fr-general-20151126-lm-sim"
+    min_group_score: 0.01
+    min_margin: 0.02
+    min_retention: 0.8
+  robert:
+    require_reviewed_source: true
+    fallback_to_omw: false
+    enabled: true
+    context_weight: 1
+    neighborhood_weight: 1
+    min_context: 0.01
+    min_margin: 0.01
+  enabled: true
+  # Ordre : cache -> OMW français (WOLF/WordNet) -> TSV -> JWI optionnel -> WOLF XML.
+  ranking:
+    semantic_weight: 0.8
+    agreement_weight: 0.2
+  wolf:
+    # WOLF XML embarqué dans le JAR, aucune installation externe.
+    enabled: true
+  jwi:
+    # Nécessite un dictionnaire WordNet externe compatible.
+    enabled: false
+    dictionary_directory: "data/wordnet-fr/dict"
+  fallback_to_wolf_when_jwi_has_no_result: true
+  cache:
+    read_enabled: false
+    write_enabled: false
+    file_path: "data/synonyms-cache.tsv"

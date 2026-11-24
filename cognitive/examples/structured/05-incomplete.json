@@ -1,0 +1,37 @@
+{
+  "sourceText": "Problème symbolique déclaré ; aucune traduction automatique du français.",
+  "entities": [
+    {
+      "kind": "item",
+      "name": "a"
+    },
+    {
+      "kind": "item",
+      "name": "b"
+    }
+  ],
+  "predicates": [
+    {
+      "name": "p",
+      "kinds": [
+        "item"
+      ]
+    },
+    {
+      "name": "q",
+      "kinds": [
+        "item"
+      ]
+    }
+  ],
+  "premises": [],
+  "goal": {
+    "atom": "q",
+    "args": [
+      "a"
+    ]
+  },
+  "unresolved": [
+    "Référence ou portée non résolue : aucune conclusion autorisée."
+  ]
+}

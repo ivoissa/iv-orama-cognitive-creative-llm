@@ -1,0 +1,17 @@
+DISCO API 3.0.0 — LinguaTools / Peter Kolb
+Site officiel : https://www.linguatools.de/disco/disco_en.html
+Source : https://github.com/linguatools/disco (tag v3.0.0)
+Binaire officiel : https://www.linguatools.de/disco/disco-3.0.0-all.jar
+Licence API annoncée par l'éditeur : Apache License 2.0. Licences et notices des dépendances amont conservées dans le JAR complet et l'archive source.
+SHA256 binaire : 1ba719c578e5a864e009fd330ef7ffadc670f12b9e97baf95c04a80815b771d3
+
+Modèle : fr-general-20151126-lm-sim — LinguaTools / DISCO, 2015
+Description officielle : https://www.linguatools.de/disco/disco-wordspaces.html
+Téléchargement indiqué par l'éditeur : https://www.dropbox.com/s/ezfsze196qaethv/fr-general-20151126-lm-sim.tar.bz2?dl=1
+Licence annoncée pour ce modèle : Creative Commons Attribution 3.0 Unported
+Texte de la licence : https://creativecommons.org/licenses/by/3.0/
+276 967 mots, corpus d'environ 1,9 milliard de tokens, modèle lemmatisé de cooccurrences, environ 2,1 Go décompressés. Le modèle officiel n'est pas réentraîné ni modifié ; l’installateur télécharge son archive officielle et la vérifie par SHA-256.
+SHA256 archive reconstituée : 4a64d90bcf3293f8ed1989891660ae444e053c84fffee5d0b36a8a87ba620199
+Taille exacte archive : 1 540 369 388 octets.
+
+Robert reste une ressource privée dont les droits de redistribution publique ne sont pas établis. Ces notices DISCO n'accordent aucun droit supplémentaire sur Robert.

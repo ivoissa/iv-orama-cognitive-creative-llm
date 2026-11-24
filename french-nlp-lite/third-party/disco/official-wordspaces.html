@@ -1,0 +1,474 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>DISCO - Wordspaces</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/tools.css" />
+<link rel="icon" href="linguatools-fav.gif" type="image/gif" />
+<meta name='language' content='en' /> 
+<meta name="robots" content="index" />
+ <meta name='revisit-after' content='7 days' />  
+ <meta name="description" content="list of available word spaces for the DISCO API 2.0" /> 
+<meta name="keywords" lang="en" content="DISCO, DISCO API, DISCO API 2.0, word space" />
+
+</head>
+<body>
+<div id="header">
+<div id="links" class="linksblog"> <a class="linksblog" href="http://www.linguatools.de/team.html">About us</a> | <a class="linksblog" href="http://www.linguatools.de/blog">Blog</a> </div>
+
+</div>
+
+<div id="content">	
+	<br />
+
+<center>
+<div id="logo">
+
+<div id="logolinks"><a href="http://www.linguatools.de/"><img src="http://www.linguatools.de/linguatools_logo.gif"  border="0" alt="Linguatools-Logo" width="368" height="150" /></a></div>
+
+<div id="navigation">
+<a class="navigation" href="/index.html">Index</a> → <a class="navigation" href="/tools/index_en.html">Tools</a> → <a class="navigation" href="/disco/disco_en.html">DISCO</a> → <a class="navigation" href="/disco/disco-download_en.html">Download</a> → Word spaces
+</div>
+<div id="logorechts">
+
+Translation in context<br>
+Ontology building<br>
+Semantic similarity<br>
+Visualisation of lexical fields
+
+</div>
+</div>
+<div id="cont">
+
+<div>
+<h1>DISCO - Wordspaces for DISCO API 2.0 and above</h1>
+
+</div>
+
+<!-- tools -->
+<div id="left-right">
+
+<!-- ==================================================================== -->
+<h2 style="color:#550000; text-align:left; margin-left:20px;">Arabic</h2>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="ar-cc-fasttext-col">ar-cc-fasttext-col</a></h3>
+
+<p>
+  This Arabic word space was imported from <a href="https://fasttext.cc/docs/en/crawl-vectors.html">fastText</a> and contains word forms.<br/>
+  <b>Word space type:</b> COL<br/>
+  <b>Word space size:</b> 2.4 gigabytes<br/>
+  <b>Corpus size:</b> unknown<br/>
+  <b>Number of queriable words:</b> 2,000,000<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization with <a href="http://userguide.icu-project.org/boundaryanalysis">ICU Tokenizer</a>.<br/>
+  <b>Parameters used for word space computation</b>: Imported the <a href="https://fasttext.cc/docs/en/crawl-vectors.html">pre-trained word vectors</a> from fasttext.cc: <a href="https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ar.300.vec.gz">cc.ar.300.vec</a> using <a href="http://www.linguatools.de/disco/disco-builder.html">DISCOBuilder</a>.
+  The vectors were trained using CBOW with position-weights, 300 dimensions, with character n-grams of length 5, a window of size 5 and 10 negative samples.<br/>
+  <b>Corpus:</b> <a href="https://commoncrawl.org/">Common Crawl</a><br/>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0 <img src="cc-by-sa-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/0zjyen4cvkf3srn/cc.ar.300-COL.denseMatrix.bz2?dl=0" rel="nofollow">cc.ar.300-COL.denseMatrix.bz2</a> and unpack it.
+</p>
+
+<hr/>
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="ar-cc-fasttext-sim">ar-cc-fasttext-sim</a></h3>
+
+<p>
+  This Arabic word space was imported from <a href="https://fasttext.cc/docs/en/crawl-vectors.html">fastText</a> and contains word forms.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 5.4 gigabytes<br/>
+  <b>Corpus size:</b> unknown<br/>
+  <b>Number of queriable words:</b> 2,000,000<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization with <a href="http://userguide.icu-project.org/boundaryanalysis">ICU Tokenizer</a>.<br/>
+  <b>Parameters used for word space computation</b>: Imported the <a href="https://fasttext.cc/docs/en/crawl-vectors.html">pre-trained word vectors</a> from fasttext.cc: <a href="https://dl.fbaipublicfiles.com/fasttext/vectors-crawl/cc.ar.300.vec.gz">cc.ar.300.vec</a> using <a href="http://www.linguatools.de/disco/disco-builder.html">DISCOBuilder</a>. The word space stores the 200 most similar words for each word, computed with vector similarity measure COSINE.<br/>
+  The vectors were trained with fastText using CBOW with position-weights, 300 dimensions, with character n-grams of length 5, a window of size 5 and 10 negative samples.<br/>
+  <b>Corpus:</b> <a href="https://commoncrawl.org/">Common Crawl</a><br/>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share-Alike License 3.0 <img src="cc-by-sa-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/0ljqeij5kzy3wcw/cc.ar.300-SIM.denseMatrix.bz2?dl=0" rel="nofollow">cc.ar.300-SIM.denseMatrix.bz2</a> and unpack it.
+</p>
+
+
+
+<!-- ==================================================================== -->
+<h2 style="color:#550000; text-align:left; margin-left:20px;">English</h2>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="enwiki13slm">enwiki-20130403-sim-lemma-mwl-lc</a></h3>
+
+<p>
+  This English word space contains lowercased lemmata.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 2.3 gigabytes<br/>
+  <b>Corpus size:</b> 1.9 billion token<br/>
+  <b>Number of queriable words:</b> 420,184<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of stop words, removal of all words with frequency &lt; 50, <a href="disco-preprocessing_en.html">lemmatization</a>, converting all words in the corpus to <a href="disco-preprocessing_en.html">lower case</a>, identifiying <a href="disco-preprocessing_en.html">multi-word lexemes</a> (they contain underscore instead of space).
+</p>
+<ul>
+  <li>List of all multi-word lexemes with their frequencies: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/enwiki-20130403-sim-lemma-mwl-lc_MWL.txt">enwiki-20130403-sim-lemma-mwl-lc_MWL.txt</a></li> 
+  <li>Stop word list: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/stopword-list_en_utf8.txt">stopword-list_en_utf8.txt</a></li>
+</ul>
+<p>
+  <b>Parameters used for word space computation</b>: Context window +-3 words regarding exact position, 30,000 most frequent lemmata as features, significance measure from <a href="http://hdl.handle.net/10062/9731">Kolb 2009</a> with threshold 0.1, similarity measure from <a href="http://webdocs.cs.ualberta.ca/~lindek/papers/acl98.pdf">Lin 1998</a>.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>the <a href="http://en.wikipedia.org/">English Wikipedia</a> (dump from 3rd April 2013)</li>
+</ul>
+<p>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/9fn8ewf0d4pwju6/enwiki-20130403-sim-lemma-mwl-lc.tar.bz2?dl=0" rel="nofollow">enwiki-20130403-sim-lemma-mwl-lc.tar.bz2</a> and unpack it.
+</p>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr/>
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="enwiki13w2vslm">enwiki-20130403-word2vec-lm-mwl-lc-sim</a></h3>
+
+<p>
+  This English word space contains lowercased lemmata. It was created using 
+<a href="https://code.google.com/p/word2vec/">word2vec</a> and then converted into a DISCO word space with the import 
+functionality of <a href="disco-builder.html">DISCO Builder</a>.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 1.4 gigabytes<br/>
+  <b>Corpus size:</b> 1.9 billion token<br/>
+  <b>Number of queriable words:</b> 420,184<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of all words with frequency &lt; 50, <a href="disco-preprocessing_en.html">lemmatization</a>, converting all words in the corpus to <a href="disco-preprocessing_en.html">lower case</a>, identifiying <a href="disco-preprocessing_en.html">multi-word lexemes</a> (they contain underscore instead of space).
+</p>
+<ul>
+  <li>List of all multi-word lexemes with their frequencies: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/enwiki-20130403-sim-lemma-mwl-lc_MWL.txt">enwiki-20130403-sim-lemma-mwl-lc_MWL.txt</a></li> 
+</ul>
+<p>
+  <b>Parameters used for word space computation</b>: word2vec was run with the parameters <i>-size 400 -negative 10 -min-count 50</i>, producing a CBOW word space. Vector similarity measure used by DISCO Builder was COSINE.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>the <a href="http://en.wikipedia.org/">English Wikipedia</a> (dump from 3rd April 2013)</li>
+</ul>
+<p>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/0yvti8pu1qdebco/enwiki-20130403-word2vec-lm-mwl-lc-sim.tar.bz2?dl=0" rel="nofollow">enwiki-20130403-word2vec-lm-mwl-lc-sim.tar.bz2</a> and unpack it.
+</p>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr/>
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="enwiki13w2vslm-dm">enwiki-20130403-word2vec-lm-mwl-lc-sim.denseMatrix</a></h3>
+
+<p>
+  This English word space contains lowercased lemmata. It was created using 
+<a href="https://code.google.com/p/word2vec/">word2vec</a> and then converted into a DenseMatrix DISCO word space with the import 
+functionality of <a href="disco-builder.html">DISCO Builder</a>.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 1.6 gigabytes<br/>
+  <b>Corpus size:</b> 1.9 billion token<br/>
+  <b>Number of queriable words:</b> 420,184<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of all words with frequency &lt; 50, <a href="disco-preprocessing_en.html">lemmatization</a>, converting all words in the corpus to <a href="disco-preprocessing_en.html">lower case</a>, identifiying <a href="disco-preprocessing_en.html">multi-word lexemes</a> (they contain underscore instead of space).
+</p>
+<ul>
+  <li>List of all multi-word lexemes with their frequencies: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/enwiki-20130403-sim-lemma-mwl-lc_MWL.txt">enwiki-20130403-sim-lemma-mwl-lc_MWL.txt</a></li> 
+</ul>
+<p>
+  <b>Parameters used for word space computation</b>: word2vec was run with the parameters <i>-size 400 -negative 10 -min-count 50</i>, producing a CBOW word space. Vector similarity measure used by DISCO Builder was COSINE.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>the <a href="http://en.wikipedia.org/">English Wikipedia</a> (dump from 3rd April 2013)</li>
+</ul>
+<p>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/zwseo50kdg6oklv/enwiki-20130403-word2vec-lm-mwl-lc-sim.denseMatrix.bz2?dl=0" rel="nofollow">enwiki-20130403-word2vec-lm-mwl-lc-sim.denseMatrix.bz2</a> and unpack it.
+</p>
+
+<!-- ==================================================================== -->
+<br/>
+<h2 style="color:#550000; text-align:left; margin-left:20px;">French</h2>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="frgen15ls">fr-general-20151126-lm-sim</a></h3>
+
+<p>
+  This French word space contains lemmata.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 2.1 gigabytes<br/>
+  <b>Corpus size:</b> 1.9 billion token<br/>
+  <b>Number of queriable words:</b> 276,967<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of stop words, removal of all words with frequency &lt; 50, and <a href="disco-preprocessing_en.html">lemmatization</a>.
+</p>
+<ul>
+  <li>Stop word list: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/stopword-list_fr_utf8.txt">stopword-list_fr_utf8.txt</a></li>
+</ul>
+<p>
+  <b>Parameters used for word space computation</b>: Context window +-3 words regarding exact position, 50,000 most frequent lemmata as features, significance measure from <a href="http://hdl.handle.net/10062/9731">Kolb 2009</a> with threshold 0.1, similarity measure from <a href="http://webdocs.cs.ualberta.ca/~lindek/papers/acl98.pdf">Lin 1998</a>.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>692,319,667 tokens: the <a href="http://fr.wikipedia.org/">French Wikipedia</a> (dump from 4th August 2014)</li>
+  <li>598,392,935 tokens: News</li>
+  <li>520,189,432 tokens: debates from EU and UN</li>
+  <li>185,987,928 tokens: subtitles</li>
+  <li>&nbsp;&nbsp;&nbsp;2,093,280 tokens: books from the Project Gutenberg</li>
+</ul>
+<p>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a><br/>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/ezfsze196qaethv/fr-general-20151126-lm-sim.tar.bz2?dl=0" rel="nofollow">fr-general-20151126-lm-sim.tar.bz2</a> and unpack it.
+</p>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr/>
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="frgen15w2vls">fr-general-20151126-lm-word2vec-sim</a></h3>
+
+<p>
+  This French word space contains lemmata. It was created using 
+<a href="https://code.google.com/p/word2vec/">word2vec</a> and then converted into a DISCO word space with the import 
+functionality of <a href="disco-builder.html">DISCO Builder</a>.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 1.7 gigabytes<br/>
+  <b>Corpus size:</b> 1.9 billion token<br/>
+  <b>Number of queriable words:</b> 281,484<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of all words with frequency &lt; 50, and <a href="disco-preprocessing_en.html">lemmatization</a>.<br/>
+  <b>Parameters used for word space computation</b>: word2vec was run with the parameters <i>-size 400 -negative 10 -min-count 50</i>, producing a CBOW word space. Vector similarity measure used by DISCO Builder was COSINE.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>692,319,667 tokens: the <a href="http://fr.wikipedia.org/">French Wikipedia</a> (dump from 4th August 2014)</li>
+  <li>598,392,935 tokens: News</li>
+  <li>520,189,432 tokens: debates from EU and UN</li>
+  <li>185,987,928 tokens: subtitles</li>
+  <li>&nbsp;&nbsp;&nbsp;2,093,280 tokens: books from the Project Gutenberg</li>
+</ul>
+<p>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a><br/>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/4edbyr8wsglbqvj/fr-general-20151126-lm-word2vec-sim.tar.bz2?dl=0" rel="nofollow">fr-general-20151126-lm-word2vec-sim.tar.bz2</a> and unpack it.
+</p>
+
+<!-- ==================================================================== -->
+<br/>
+<h2 style="color:#550000; text-align:left; margin-left:20px;">German</h2>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="degen15ls">de-general-20150421-lm-sim</a></h3>
+
+<p>
+  This German word space contains lemmata.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 3.5 gigabytes<br/>
+  <b>Corpus size:</b> 1.5 billion token<br/>
+  <b>Number of queriable words:</b> 470,788<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of stop words, removal of all words with frequency &lt; 50, and <a href="disco-preprocessing_en.html">lemmatization</a>.
+</p>
+<ul>
+  <li>Stop word list: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/stopword-list_de_utf8.txt">stopword-list_de_utf8.txt</a></li>
+</ul>
+<p>
+  <b>Parameters used for word space computation</b>: Context window +-3 words regarding exact position, 50,000 most frequent lemmata as features, significance measure from <a href="http://hdl.handle.net/10062/9731">Kolb 2009</a> with threshold 0.1, similarity measure from <a href="http://webdocs.cs.ualberta.ca/~lindek/papers/acl98.pdf">Lin 1998</a>.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>747,547,646 tokens: the <a href="http://de.wikipedia.org/">German Wikipedia</a> (dump from 25th July 2014)</li>
+  <li>335,937,237 tokens: Webcrawl (2014)</li>
+  <li>317,677,649 tokens: Newspapers and magazines (1949-2007)</li>
+  <li>&nbsp;&nbsp;64,174,384 tokens: parliamentary debates</li>
+  <li>&nbsp;&nbsp;25,195,504 tokens: books (mainly fiction from the period 1850-1920) from the Project Gutenberg</li>
+  <li>&nbsp;&nbsp;13,553,836 tokens: tv &amp; movie subtitles</li>
+</ul>
+<p>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported <img src="cc-by-nc-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/1dtwc340y9qul9n/de-general-20150421-lm-sim.tar.bz2?dl=0" rel="nofollow">de-general-20150421-lm-sim.tar.bz2</a> and unpack it.
+</p>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr/>
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="degen15w2vls">de-general-lm-word2vec-sim</a></h3>
+
+<p>
+  This German word space contains lemmata. It was created using 
+<a href="https://code.google.com/p/word2vec/">word2vec</a> and then converted into a DISCOLuceneIndex word space with the import 
+functionality of <a href="disco-builder.html">DISCO Builder</a>.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 3.0 gigabytes<br/>
+  <b>Corpus size:</b> 1.5 billion token<br/>
+  <b>Number of queriable words:</b> 470,788<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of all words with frequency &lt; 50, and <a href="disco-preprocessing_en.html">lemmatization</a>.<br/>
+  <b>Parameters used for word space computation</b>: word2vec was run with the parameters <i>-size 400 -negative 10 -min-count 50</i>, producing a CBOW word space. Vector similarity measure used by DISCO Builder was COSINE.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>747,547,646 tokens: the <a href="http://de.wikipedia.org/">German Wikipedia</a> (dump from 25th July 2014)</li>
+  <li>335,937,237 tokens: Webcrawl (2014)</li>
+  <li>317,677,649 tokens: Newspapers and magazines (1949-2007)</li>
+  <li>&nbsp;&nbsp;64,174,384 tokens: parliamentary debates</li>
+  <li>&nbsp;&nbsp;25,195,504 tokens: books (mainly fiction from the period 1850-1920) from the Project Gutenberg</li>
+  <li>&nbsp;&nbsp;13,553,836 tokens: tv &amp; movie subtitles</li>
+</ul>
+<p>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported <img src="cc-by-nc-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/hz5hsk8due06qwc/de-general-20150421-lm-word2vec-sim.tar.bz2?dl=0" rel="nofollow">de-general-20150421-lm-word2vec-sim.tar.bz2</a> and unpack it.
+</p>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr/>
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="degen15w2vls-dm">de-general-20150421-lm-word2vec-sim.denseMatrix</a></h3>
+
+<p>
+  This German word space contains lemmata. It was created using 
+<a href="https://code.google.com/p/word2vec/">word2vec</a> and then converted into a DenseMatrix DISCO word space with the import 
+functionality of <a href="disco-builder.html">DISCO Builder</a>.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 1.8 gigabytes<br/>
+  <b>Corpus size:</b> 1.5 billion token<br/>
+  <b>Number of queriable words:</b> 470,788<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of all words with frequency &lt; 50, and <a href="disco-preprocessing_en.html">lemmatization</a>.<br/>
+  <b>Parameters used for word space computation</b>: word2vec was run with the parameters <i>-size 400 -negative 10 -min-count 50</i>, producing a CBOW word space. Vector similarity measure used by DISCO Builder was COSINE.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>747,547,646 tokens: the <a href="http://de.wikipedia.org/">German Wikipedia</a> (dump from 25th July 2014)</li>
+  <li>335,937,237 tokens: Webcrawl (2014)</li>
+  <li>317,677,649 tokens: Newspapers and magazines (1949-2007)</li>
+  <li>&nbsp;&nbsp;64,174,384 tokens: parliamentary debates</li>
+  <li>&nbsp;&nbsp;25,195,504 tokens: books (mainly fiction from the period 1850-1920) from the Project Gutenberg</li>
+  <li>&nbsp;&nbsp;13,553,836 tokens: tv &amp; movie subtitles</li>
+</ul>
+<p>
+  <b>License: </b> <a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported <img src="cc-by-nc-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/sx3qp8iur5qiyq9/de-general-20150421-lm-word2vec-sim.denseMatrix.bz2?dl=0" rel="nofollow">de-general-20150421-lm-word2vec-sim.denseMatrix.bz2</a> and unpack it.
+</p>
+
+<!-- ==================================================================== -->
+<br/>
+<h2 style="color:#550000; text-align:left; margin-left:20px;">Russian</h2>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="ruls">ru-ruwac-ruwiki-lm-sim</a></h3>
+
+<p>
+  This Russian word space contains lemmata.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 2.8 gigabytes<br/>
+  <b>Corpus size:</b> 2.2 billion token<br/>
+  <b>Number of queriable words:</b> 226,108<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of stop words, removal of all words with frequency &lt; 100, and <a href="disco-preprocessing_en.html">lemmatization</a>.
+</p>
+<ul>
+  <li>Stop word list: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/stopword-list_ru_utf8.txt">stopword-list_ru_utf8.txt</a></li>
+</ul>
+<p>
+  <b>Parameters used for word space computation</b>: Context window +-3 words regarding exact position, 50,000 most frequent lemmata as features, significance measure from <a href="http://hdl.handle.net/10062/9731">Kolb 2009</a> with threshold 0.1, similarity measure from <a href="http://webdocs.cs.ualberta.ca/~lindek/papers/acl98.pdf">Lin 1998</a>.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>2,006,578,670 tokens: <a href="http://corpus.leeds.ac.uk/tools/ru/ruwac-parsed.out.xz">RuWaC</a> (webcrawl)</li>
+  <li>&nbsp;&nbsp;&nbsp;223,358,656 tokens: <a href="https://s3-eu-west-1.amazonaws.com/dsl-research/wiki/wiki-ru-pos.csv.bz2">ruwiki</a> (Russian Wikipedia)</li>
+</ul>
+<p>
+  <b>License:</b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="" rel="nofollow">ru-ruwac-ruwiki-lm-sim.tar.bz2</a> and unpack it.
+</p>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr/>
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="ruw2vls">ru-ruwac-ruwiki-lm-word2vec-sim</a></h3>
+
+<p>
+  This Russian word space contains lemmata. It was created using 
+<a href="https://code.google.com/p/word2vec/">word2vec</a> and then converted into a DISCO word space with the import 
+functionality of <a href="disco-builder.html">DISCO Builder</a>.<br/>
+  <b>Word space type:</b> SIM<br/>
+  <b>Word space size:</b> 2.6 gigabytes<br/>
+  <b>Corpus size:</b> 2.2 billion token<br/>
+  <b>Number of queriable words:</b> 226,108<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of all words with frequency &lt; 100, and <a href="disco-preprocessing_en.html">lemmatization</a>.<br/>
+  <b>Parameters used for word space computation</b>: word2vec was run with the parameters <i>-size 400 -negative 10 -min-count 100</i>, producing a CBOW word space. Vector similarity measure used by DISCO Builder was COSINE.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>2,006,578,670 tokens: <a href="http://corpus.leeds.ac.uk/tools/ru/ruwac-parsed.out.xz">RuWaC</a> (webcrawl)</li>
+  <li>&nbsp;&nbsp;&nbsp;223,358,656 tokens: <a href="https://s3-eu-west-1.amazonaws.com/dsl-research/wiki/wiki-ru-pos.csv.bz2">ruwiki</a> (Russian Wikipedia)</li>
+</ul>
+<p>
+  <b>License:</b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/phvq6jur8t0ftms/ru-ruwac-ruwiki-lm-word2vec-sim.tar.bz2?dl=0" rel="nofollow">ru-ruwac-ruwiki-lm-word2vec-sim.tar.bz2</a> and unpack it.
+</p>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr/>
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="rulc">ru-ruwac-ruwiki-lem-col</a></h3>
+
+<p>
+  This Russian word space contains lemmata.<br/>
+  <b>Word space type:</b> COL<br/>
+  <b>Word space size:</b> 2.3 gigabytes<br/>
+  <b>Corpus size:</b> 2.2 billion token<br/>
+  <b>Number of queriable words:</b> 226,108<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of stop words, removal of all words with frequency &lt; 100, and <a href="disco-preprocessing_en.html">lemmatization</a>.
+</p>
+<ul>
+  <li>Stop word list: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/stopword-list_ru_utf8.txt">stopword-list_ru_utf8.txt</a></li>
+</ul>
+<p>
+  <b>Parameters used for word space computation</b>: Context window +-5 words, 200,000 most frequent lemmata as features, significance measure LOGLIKELIHOOD with threshold 7.0.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>2,006,578,670 tokens: <a href="http://corpus.leeds.ac.uk/tools/ru/ruwac-parsed.out.xz">RuWaC</a> (webcrawl)</li>
+  <li>&nbsp;&nbsp;&nbsp;223,358,656 tokens: <a href="https://s3-eu-west-1.amazonaws.com/dsl-research/wiki/wiki-ru-pos.csv.bz2">ruwiki</a> (Russian Wikipedia)</li>
+</ul>
+<p>
+  <b>License:</b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/qja5hxm9dw9elyg/ru-ruwac-ruwiki-lem-col.tar.bz2?dl=0" rel="nofollow">ru-ruwac-ruwiki-lem-col.tar.bz2</a> and unpack it.
+</p>
+
+<!-- :::::::::::::::::::::::::::::::::::::::::::::::::::::: -->
+<hr/>
+<h3 style="color:#550000; text-align:left; margin-left:20px;"><a name="ruc">ru-ruwac-ruwiki-col</a></h3>
+
+<p>
+  This Russian word space contains word forms.<br/>
+  <b>Word space type:</b> COL<br/>
+  <b>Word space size:</b> 4.9 gigabytes<br/>
+  <b>Corpus size:</b> 2.2 billion token<br/>
+  <b>Number of queriable words:</b> 508,350<br/>
+  <b>Character encoding:</b> UTF-8 (Unicode)<br/>
+  <b>Corpus preprocessing</b>: Tokenization, removal of stop words, removal of all words with frequency &lt; 100.
+</p>
+<ul>
+  <li>Stop word list: <a href="http://www.linguatools.de/data/DISCO/disco-1.1/stopword-list_ru_utf8.txt">stopword-list_ru_utf8.txt</a></li>
+</ul>
+<p>
+  <b>Parameters used for word space computation</b>: Context window +-3 words, 50,000 most frequent word forms as features, significance measure from <a href="http://hdl.handle.net/10062/9731">Kolb 2009</a> with threshold 0.5.<br/>
+  <b>Corpus:</b>
+</p>
+<ul>
+  <li>2,006,578,670 tokens: <a href="http://corpus.leeds.ac.uk/tools/ru/ruwac-parsed.out.xz">RuWaC</a> (webcrawl)</li>
+  <li>&nbsp;&nbsp;&nbsp;223,358,656 tokens: <a href="https://s3-eu-west-1.amazonaws.com/dsl-research/wiki/wiki-ru-pos.csv.bz2">ruwiki</a> (Russian Wikipedia)</li>
+</ul>
+<p>
+  <b>License:</b> <a href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported <img src="cc-by-80x15.png"></a></br>
+  <b>Download and installation:</b> Download the archive <a href="https://www.dropbox.com/s/8eyauk6aqgtqisj/ru-ruwac-ruwiki-col.tar.bz2?dl=0" rel="nofollow">ru-ruwac-ruwiki-col.tar.bz2</a> and unpack it.
+</p>
+
+<!-- tools ende -->
+</div>
+</center>
+
+</div>
+
+<div id="footer">  <a class="linksblog" href="http://www.linguatools.de/impressum.html">Impressum</a>  |  <a class="linksblog" href="http://www.twitter.com/linguatools">Twitter</a>  | <a class="linksblog" href="http://www.linguatools.de/service.html">Service</a> | <a class="linksblog" href="http://www.linguatools.de/links.html">Links</a> | <a class="linksblog" href="http://www.linguatools.de/translators/">Übersetzerverzeichnis</a>| &copy; linguatools 2007-2020
+
+</div>
+
+</body>
+</html>
+

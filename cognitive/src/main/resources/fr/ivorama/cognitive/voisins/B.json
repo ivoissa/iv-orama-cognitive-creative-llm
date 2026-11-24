@@ -1,0 +1,358 @@
+{
+  "liste": "B",
+  "type": "relations lexicales (entre mots dans la langue)",
+  "ordre": "fréquence d’usage estimée, décroissante",
+  "proximite": "valeur de 0 à 1 par relation : proximité de sens estimée entre deux mots liés (1 = très proche). Valeurs par défaut à ajuster.",
+  "categories": [
+    {
+      "rang": 1,
+      "nom": "Associatives",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Collocation",
+          "proximite": 0.7,
+          "description": "Association habituelle de deux mots.",
+          "exemple": "fumer une cigarette, nourrir un espoir",
+          "symetrique": true
+        },
+        {
+          "rang": 2,
+          "nom": "Champ lexical",
+          "proximite": 0.6,
+          "description": "Ensemble de mots liés à un même thème.",
+          "exemple": "mer, vague, plage, voile",
+          "symetrique": true
+        },
+        {
+          "rang": 3,
+          "nom": "Solidarité lexicale",
+          "proximite": 0.8,
+          "description": "Un mot en appelle presque nécessairement un autre.",
+          "exemple": "aboyer → chien",
+          "symetrique": false
+        },
+        {
+          "rang": 4,
+          "nom": "Association libre",
+          "proximite": 0.5,
+          "description": "Lien d’idée spontané entre deux mots.",
+          "exemple": "sel / mer",
+          "symetrique": true
+        },
+        {
+          "rang": 5,
+          "nom": "Expression figée",
+          "proximite": 0.8,
+          "description": "Suite de mots au sens global fixe.",
+          "exemple": "prendre la mouche",
+          "symetrique": false
+        }
+      ]
+    },
+    {
+      "rang": 2,
+      "nom": "Dérivation et composition",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Famille morphologique",
+          "proximite": 0.8,
+          "description": "Mots qui partagent la même racine.",
+          "exemple": "terre, terrien, terrasse, enterrer",
+          "symetrique": true
+        },
+        {
+          "rang": 2,
+          "nom": "Dérivation",
+          "proximite": 0.8,
+          "description": "Création d’un mot par ajout d’un préfixe ou d’un suffixe.",
+          "exemple": "faire → défaire, faisable",
+          "symetrique": false
+        },
+        {
+          "rang": 3,
+          "nom": "Composition",
+          "proximite": 0.7,
+          "description": "Création d’un mot par réunion de plusieurs mots.",
+          "exemple": "porte-monnaie",
+          "symetrique": false
+        },
+        {
+          "rang": 4,
+          "nom": "Conversion",
+          "proximite": 0.9,
+          "description": "Changement de catégorie grammaticale sans changer la forme.",
+          "exemple": "le dîner / dîner",
+          "symetrique": true
+        },
+        {
+          "rang": 5,
+          "nom": "Abréviation (troncation)",
+          "proximite": 0.95,
+          "description": "Forme raccourcie d’un mot.",
+          "exemple": "professeur / prof",
+          "symetrique": false
+        }
+      ]
+    },
+    {
+      "rang": 3,
+      "nom": "Sens",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Synonymie",
+          "proximite": 1.0,
+          "description": "Deux mots de sens identique ou très proche.",
+          "exemple": "voiture / automobile",
+          "symetrique": true
+        },
+        {
+          "rang": 2,
+          "nom": "Antonymie",
+          "proximite": 0.9,
+          "description": "Deux mots de sens opposé (complémentaire, graduelle ou converse).",
+          "exemple": "chaud / froid, acheter / vendre",
+          "symetrique": true
+        },
+        {
+          "rang": 3,
+          "nom": "Hyperonymie",
+          "proximite": 0.8,
+          "description": "Mot plus général qui englobe un autre mot.",
+          "exemple": "fleur pour rose",
+          "symetrique": false
+        },
+        {
+          "rang": 4,
+          "nom": "Hyponymie",
+          "proximite": 0.8,
+          "description": "Mot plus spécifique, compris dans un mot plus général.",
+          "exemple": "rose pour fleur",
+          "symetrique": false
+        },
+        {
+          "rang": 5,
+          "nom": "Co-hyponymie",
+          "proximite": 0.6,
+          "description": "Mots de même niveau sous un même hyperonyme.",
+          "exemple": "rose / tulipe",
+          "symetrique": true
+        },
+        {
+          "rang": 6,
+          "nom": "Méronymie",
+          "proximite": 0.6,
+          "description": "Le mot désigne une partie d’un tout.",
+          "exemple": "roue → voiture",
+          "symetrique": false
+        },
+        {
+          "rang": 7,
+          "nom": "Holonymie",
+          "proximite": 0.6,
+          "description": "Le mot désigne le tout dont un autre est une partie.",
+          "exemple": "voiture ← roue",
+          "symetrique": false
+        },
+        {
+          "rang": 8,
+          "nom": "Paronymie sémantique",
+          "proximite": 0.5,
+          "description": "Sens voisins mais distincts.",
+          "exemple": "bruit / son",
+          "symetrique": true
+        }
+      ]
+    },
+    {
+      "rang": 4,
+      "nom": "Ambiguïté de forme",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Polysémie",
+          "proximite": 0.9,
+          "description": "Un même mot a plusieurs sens liés entre eux.",
+          "exemple": "souris (animal, appareil)",
+          "symetrique": false
+        },
+        {
+          "rang": 2,
+          "nom": "Homonymie",
+          "proximite": 0.2,
+          "description": "Même forme, sens sans rapport (homophones ou homographes).",
+          "exemple": "vert / verre, les fils / le fil",
+          "symetrique": true
+        },
+        {
+          "rang": 3,
+          "nom": "Paronymie",
+          "proximite": 0.2,
+          "description": "Formes proches, sens différents ; source de confusions.",
+          "exemple": "conjecture / conjoncture",
+          "symetrique": true
+        },
+        {
+          "rang": 4,
+          "nom": "Anagramme",
+          "proximite": 0.1,
+          "description": "Mots formés des mêmes lettres dans un autre ordre.",
+          "exemple": "chien / niche",
+          "symetrique": true
+        }
+      ]
+    },
+    {
+      "rang": 5,
+      "nom": "Usage",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Registre",
+          "proximite": 0.6,
+          "description": "Niveau de langue d’un mot : familier, courant, soutenu.",
+          "exemple": "bouquin / livre / ouvrage",
+          "symetrique": true
+        },
+        {
+          "rang": 2,
+          "nom": "Connotation",
+          "proximite": 0.7,
+          "description": "Valeur affective ou suggestive ajoutée au sens de base.",
+          "exemple": "maigre / svelte",
+          "symetrique": true
+        },
+        {
+          "rang": 3,
+          "nom": "Variante",
+          "proximite": 0.95,
+          "description": "Autre forme d’un même mot (graphique, régionale, de registre).",
+          "exemple": "clé / clef, septante / soixante-dix",
+          "symetrique": true
+        },
+        {
+          "rang": 4,
+          "nom": "Emprunt",
+          "proximite": 0.5,
+          "description": "Mot venu d’une autre langue.",
+          "exemple": "week-end",
+          "symetrique": false
+        },
+        {
+          "rang": 5,
+          "nom": "Doublet étymologique",
+          "proximite": 0.5,
+          "description": "Deux mots de même origine ayant évolué différemment.",
+          "exemple": "frêle / fragile",
+          "symetrique": true
+        }
+      ]
+    },
+    {
+      "rang": 6,
+      "nom": "Causalité et action",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Agent et action",
+          "proximite": 0.6,
+          "description": "Lie celui qui agit à son action.",
+          "exemple": "boulanger → pain",
+          "symetrique": false
+        },
+        {
+          "rang": 2,
+          "nom": "Résultat (produit)",
+          "proximite": 0.6,
+          "description": "Lie une action à ce qu’elle produit.",
+          "exemple": "peindre → peinture",
+          "symetrique": false
+        },
+        {
+          "rang": 3,
+          "nom": "Lieu",
+          "proximite": 0.5,
+          "description": "Lie un mot à l’endroit où l’action ou l’objet se trouve.",
+          "exemple": "boulangerie → pain",
+          "symetrique": false
+        },
+        {
+          "rang": 4,
+          "nom": "Instrument",
+          "proximite": 0.5,
+          "description": "Lie une action à l’outil utilisé.",
+          "exemple": "marteau → frapper",
+          "symetrique": false
+        },
+        {
+          "rang": 5,
+          "nom": "Moyen et but",
+          "proximite": 0.5,
+          "description": "Lie un objet ou un acte à sa finalité.",
+          "exemple": "clé → ouvrir",
+          "symetrique": false
+        },
+        {
+          "rang": 6,
+          "nom": "Cause et conséquence",
+          "proximite": 0.6,
+          "description": "Lie un fait à ce qui le provoque ou à ce qu’il entraîne.",
+          "exemple": "pluie → inondation",
+          "symetrique": false
+        }
+      ]
+    },
+    {
+      "rang": 7,
+      "nom": "Structure",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Réciprocité",
+          "proximite": 0.8,
+          "description": "Deux mots qui se définissent l’un par l’autre.",
+          "exemple": "parent / enfant",
+          "symetrique": true
+        },
+        {
+          "rang": 2,
+          "nom": "Opposition en série",
+          "proximite": 0.6,
+          "description": "Mots qui se suivent dans une suite ordonnée.",
+          "exemple": "lundi → mardi",
+          "symetrique": false
+        },
+        {
+          "rang": 3,
+          "nom": "Gradation",
+          "proximite": 0.7,
+          "description": "Mots classés par intensité croissante ou décroissante.",
+          "exemple": "tiède < chaud < brûlant",
+          "symetrique": false
+        },
+        {
+          "rang": 4,
+          "nom": "Inclusion",
+          "proximite": 0.7,
+          "description": "Hiérarchie ou taxonomie emboîtant des mots les uns dans les autres.",
+          "exemple": "animal > mammifère > chien",
+          "symetrique": false
+        }
+      ]
+    },
+    {
+      "rang": 8,
+      "nom": "Relations techniques des extracteurs",
+      "relations": [
+        {
+          "rang": 1,
+          "nom": "Proximité vectorielle",
+          "proximite": 1.0,
+          "description": "Coefficient technique neutre ; le score de l’extracteur porte déjà la pondération. Ce coefficient n’est pas une probabilité de vérité."
+        }
+      ]
+    }
+  ]
+}

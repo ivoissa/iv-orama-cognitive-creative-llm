@@ -1,0 +1,1 @@
+Le serveur distant reçoit une requête sécurisée. Une application Java analyse le message entrant. La base de données conserve les informations utiles. Un processus automatique vérifie les erreurs. Le système transmet une réponse valide au client.

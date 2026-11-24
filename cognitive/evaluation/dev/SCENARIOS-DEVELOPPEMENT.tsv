@@ -1,0 +1,11 @@
+# Jeux artificiels internes ; JAMAIS un benchmark indépendant
+DEV01	DEDUCTION	document a	sais Le document a est validé.	Le document a est-il validé ?	INTERPRETED	approuve_document_a	YES		YES	CONDITIONAL_ONLY
+DEV02	DEDUCTION	document a	sais Le document a n'est pas validé.	Le document a est-il validé ?	INTERPRETED	approuve_document_a	NO		NO	CONDITIONAL_ONLY
+DEV03	INCERTITUDE	document a		Le document a est-il archivé ?	INTERPRETED	archive_document_a	UNKNOWN		UNKNOWN	NO_FALSE_CLOSURE
+DEV04	INCERTITUDE	document a	sais Le document a est archivé.	Pourquoi le document a est-il archivé ?	EXPLANATION	archive_document_a	WHY_UNPROVEN		WHY_UNPROVEN	NO_FALSE_CLOSURE
+DEV05	DIALOGUE	document a;document b	sais Le document a est validé.;sais Le document b n'est pas validé.	Est-ce que tous les documents ne sont pas validés ?	NEEDS_CLARIFICATION	not(and(approuve_document_a,approuve_document_b))	CLARIFICATION	precise pas_tous	YES	CONDITIONAL_ONLY
+DEV06	DIALOGUE	document a		Qui a validé le document a ?	UNINTERPRETED	-	UNINTERPRETED	annule	WITHDRAWN	NO_FALSE_CLOSURE
+DEV07	FRANCAIS	document a	sais Si le document a est validé, alors le document a est archivé.;sais Le document a est validé.	Pourquoi le document a est-il archivé ?	EXPLANATION	archive_document_a	WHY_PROVEN		WHY_PROVEN	CHECKED_PROOF
+DEV08	FRANCAIS	dossier a	evenement E1 validation dossier A temps 1 connu 8 source paul	La validation E1 du dossier A est-elle active à t5 ?	TEMPORAL	-	TEMPORAL_YES	evenement E2 annulation E1 dossier A temps 4 connu 9 source paul	TEMPORAL_NO	ANY
+DEV09	TRANSFERT	dossier a		Le dossier A est-il archivé à t5 ?	TEMPORAL	-	TEMPORAL_UNKNOWN	evenement E1 archivage dossier A temps 4 connu 9 source paul	TEMPORAL_YES	ANY
+DEV10	TRANSFERT	dossier a	evenement E1 validation dossier A temps 1 connu 2 source paul;evenement E3 archivage dossier A temps 5 connu 6 source alice	L'événement E1 a-t-il causé E3 ?	TEMPORAL	-	TEMPORAL_UNKNOWN	cause C1 E1 E3 connu 8 source alice	CAUSAL_UNPROVEN	NO_FALSE_CLOSURE

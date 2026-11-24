@@ -1,0 +1,74 @@
+{
+  "sourceText": "Problème symbolique déclaré ; aucune traduction automatique du français.",
+  "entities": [
+    {
+      "kind": "item",
+      "name": "a"
+    },
+    {
+      "kind": "item",
+      "name": "b"
+    }
+  ],
+  "predicates": [
+    {
+      "name": "p",
+      "kinds": [
+        "item"
+      ]
+    },
+    {
+      "name": "q",
+      "kinds": [
+        "item"
+      ]
+    }
+  ],
+  "premises": [
+    {
+      "id": "rule",
+      "origin": "DOMAIN_RULE",
+      "source": "example",
+      "excerpt": "{\"forall\": {\"variable\": \"x\", \"kind\": \"item\", \"body\": {\"implies\": [{\"atom\": \"p\", \"args\": [\"?x\"]}, {\"atom\": \"q\", \"args\": [\"?x\"]}]}}}",
+      "formula": {
+        "forall": {
+          "variable": "x",
+          "kind": "item",
+          "body": {
+            "implies": [
+              {
+                "atom": "p",
+                "args": [
+                  "?x"
+                ]
+              },
+              {
+                "atom": "q",
+                "args": [
+                  "?x"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "goal": {
+    "atom": "q",
+    "args": [
+      "a"
+    ]
+  },
+  "observables": [
+    {
+      "formula": {
+        "atom": "p",
+        "args": [
+          "a"
+        ]
+      },
+      "cost": 1
+    }
+  ]
+}

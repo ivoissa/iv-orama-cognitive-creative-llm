@@ -1,0 +1,11 @@
+# Closed grammatical paradigms: family, masculine sg, feminine sg, plural, before-vowel masculine sg, before-vowel feminine sg.
+# These are function-word agreement rules, not synonym pairs or corpus adaptations.
+definite	le	la	les	l'	l'
+indefinite	un	une	des	un	une
+demonstrative	ce	cette	ces	cet	cette
+possessive_1	mon	ma	mes	mon	mon
+possessive_2	ton	ta	tes	ton	ton
+possessive_3	son	sa	ses	son	son
+possessive_4	notre	notre	nos	notre	notre
+possessive_5	votre	votre	vos	votre	votre
+possessive_6	leur	leur	leurs	leur	leur
