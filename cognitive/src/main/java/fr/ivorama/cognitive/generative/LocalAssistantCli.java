@@ -230,10 +230,7 @@ public final class LocalAssistantCli {
                     var turn = conversation.ask(input, renderer == null ? System.out::print : ignored -> {});
                     var result = turn.generation();
                     if (renderer != null) {
-                        String answer = result.text();
-                        // Technical and structured responses retain their exact formatting.
-                        if (answer.matches("[\\p{L} ,.!?…’'–—-]+")) answer = renderer.renderPlainText(answer);
-                        System.out.print(answer);
+                        System.out.print(renderer.renderForConsole(result.text()));
                     }
                     System.out.println();
                     System.out.println("Appels modèle (tous essais) : "+turn.telemetry().calls().size()+

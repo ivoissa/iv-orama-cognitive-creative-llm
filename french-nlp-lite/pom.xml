@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ivorama</groupId>
-    <artifactId>french-nlp-lite</artifactId>
+    <artifactId>ivorama-french-nlp</artifactId>
     <version>1.5.0-candidate</version>
     <name>IV-ORAMA French NLP — analyse et transformation</name>
 

@@ -21,7 +21,7 @@ java -cp "cognitive/target/iv-orama-cognitive-0.7.12-experiment.jar:cognitive/ta
 
 Sous Windows, utiliser `;` comme séparateur du classpath. Démarrer Ollama et installer le modèle indiqué dans `llm.model` avant `--check`. Un autre YAML est possible via `--config chemin.yml` avant le mode. Les propriétés JVM existantes restent prioritaires sur le YAML.
 
-Le rendu Lite est optionnel. Il s’applique localement à la réponse finale en mode `--chat-iv` lorsque `rendering.enabled` vaut `true`. Le réglage par défaut est `false`.
+Le rendu Lite est optionnel. Il s’applique localement à la réponse finale en mode `--chat-iv` lorsque `rendering.enabled` vaut `true`. Le réglage par défaut est `false`. Le rendu examine chaque ligne et conserve les sauts de ligne et les blocs de code balisés. La console ajoute `**[Lite / règles appliquées]**` aux lignes réécrites. Le quota d’emphase s’applique à chaque ligne traitée.
 
 Le YAML active le contrôle entrée/sortie `ENFORCE` existant. La construction d’une version expurgée des résultats d’outils et la table locale d’alias restent à développer. Le fichier facultatif `security.protected_values_file` doit rester hors de l’archive et du dépôt.
 

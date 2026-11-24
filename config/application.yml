@@ -87,4 +87,4 @@ tools:
 
 # La section transformations règle le style du rendu Lite.
 rendering:
-  enabled: false
+  enabled: true
